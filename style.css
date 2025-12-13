@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('font/Nunito-ExtraLight.woff2') format('woff2'),
+        url('font/Nunito-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 :root {
   --bg-main: #0b0f0d;
   --bg-card: #111816;
