@@ -1,0 +1,18 @@
+:root {
+  --bg-main: #0b0f0d;
+  --bg-card: #111816;
+  --bg-card-soft: #16201c;
+  --accent-primary: #00c67c;
+  --accent-soft: #38e3a1;
+  --accent-glow: #00c67c66;
+  --text-primary: #e6f1ec;
+  --text-secondary: #a3b8ae;
+  --text-muted: #6b8076;      
+  --border-default: #1f2a25;
+  --border-accent: #00c67c;
+  --btn-bg: #16201c;
+  --btn-bg-hover: #1d2b26;
+  --btn-text: #e6f1ec;
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 16px var(--accent-glow);
+}
