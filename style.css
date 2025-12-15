@@ -34,15 +34,22 @@ body {
 }
 
 .container {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card,
+svg {
+    transition: all 0.25s ease;
 }
 
 .card {
     margin-top: 20px;
     width: 100%;
     max-width: 360px;
+    min-height: 420px;
     height: auto;
     border: 2px solid var(--border-default);
     padding: 24px;
@@ -52,22 +59,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
 }
 
 .card:hover {
     border-color: var(--border-accent);
+    box-shadow:
+        var(--shadow-card),
+        0 0 0 1px var(--border-accent),
+        var(--shadow-glow);
 }
 
 #profile-pic-img {
-    width: 96px;
+    width: 110px;
     height: auto;
     border-radius: 50%;
     border: 2px solid var(--border-accent);
 }
 
-#name{
+#name {
     font-size: 22px;
     font-weight: 600;
     color: var(--text-primary);
@@ -76,34 +87,38 @@ body {
     margin-top: 16px;
 }
 
-#bio{
-    margin-top: 15px;
+#bio {
     font-size: 15px;
     line-height: 1.4;
     color: var(--text-secondary);
+    text-align: center;
+    max-width: 260px;
 }
 
-svg{
+svg {
     width: 24px;
     height: 24px;
     color: var(--text-secondary);
+    transition: color 0.2s ease, filter 0.2s ease;
 }
 
-ul{
-   list-style: none;
+ul {
+    list-style: none;
 }
-.social-links{
+
+.social-links {
     margin-top: 20px;
     width: 100%;
 }
-.social-links > ul{
+
+.social-links>ul {
     display: flex;
     padding: 0;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
 }
 
-svg:hover{
+svg:hover {
     color: var(--border-accent);
+    filter: drop-shadow(0 0 6px var(--accent-glow));
 }
