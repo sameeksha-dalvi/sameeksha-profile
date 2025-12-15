@@ -80,6 +80,17 @@ svg {
     height: auto;
     border-radius: 50%;
     border: 2px solid var(--border-accent);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#profile-pic-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 198, 124, 0.3);
+}
+
+#profile-pic-img:active {
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0, 198, 124, 0.4);
 }
 
 #name {
