@@ -70,6 +70,11 @@ svg {
         var(--shadow-glow);
 }
 
+.card:active {
+  transform: scale(0.97);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
 #profile-pic-img {
     width: 110px;
     height: auto;
@@ -120,4 +125,9 @@ ul {
 svg:hover {
     color: var(--border-accent);
     filter: drop-shadow(0 0 6px var(--accent-glow));
+}
+
+.social-links a:active svg {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px var(--accent-glow));
 }
