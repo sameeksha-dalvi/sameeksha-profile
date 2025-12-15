@@ -47,4 +47,9 @@ body{
   padding: 24px;
   background-color: var(--bg-card);
   border-radius: 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.card:hover{
+    border-color: var(--border-accent);
 }
