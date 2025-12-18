@@ -1,3 +1,7 @@
+import { inject } from "@vercel/analytics";
+
+inject();
+
 document.addEventListener("click", (e) => {
     const sparkleContainer = document.getElementById("sparkle-container");
     const sparkleCount = 12;
